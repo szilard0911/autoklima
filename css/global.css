@@ -1,0 +1,282 @@
+/*
+Goldilocks Approach to Responsive Web Design Boilerplate
+
+Author: Design by Front - @designbyfront
+Version: 0.1
+URL: http://www.goldilocksapproach.com
+----------------------------------------------------------------------------------------
+
+CONTENTS - GLOBAL.CSS
+-----------------------------------------
+1. RESET
+2. ROOT
+3. CORE TYPOGRAPHY
+4. LINKS
+5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+7. BROWSER AND NON-SEMANTIC STYLING
+
+CONTENTS - LAYOUT.CSS
+-----------------------------------------
+8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+
+*/
+/* Fonts
+-------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'din';
+    src: url('../fonts/DINPro-Regular.eot') ;
+}
+@font-face {
+    font-family: 'din';
+    src: url('../fonts/DINPro-Regular.ttf');
+
+}
+
+
+@font-face {
+    font-family: 'dinbold';
+    src: url(../fonts/DINPro-Black.eot);
+}
+@font-face {
+    font-family: 'dinbold';
+    src: url(../fonts/DINPro-Black.ttf);
+
+}
+
+
+/* Neuzeit Grotesk Bold Cond */
+
+
+/* 1. RESET
+----------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, bside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size:100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+
+article, aside, bside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+  
+  
+/* 2. ROOT
+----------------------------------------------------------------------------------------*/
+html { 
+  overflow-y: scroll;
+  background: #FFF;
+  }
+
+/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
+img, embed, object, video { max-width: 100%; }
+img{ border: none; vertical-align: top; }
+.ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video { width: 100%; }
+
+
+/* 3. CORE TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1em;
+  line-height: 1.618em;
+  background: url("../images/site-bg.png");
+  }
+
+#back{
+    background: url("../images/header-container-bg.png") repeat-x ;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1em;
+  font-weight: normal;
+  }
+
+p, ul, ol, dl, blockquote {
+    max-width: 30em; /* Optimal width for long-form text */
+    line-height: 120%;
+    margin: 0;
+    font-family: Arial, Helvetica, Sans-serif;
+    color:#CCC;
+    font-size: 0.813em;
+}
+p{
+    color: #999999;
+    font-family: Trebuchet MS, Verdana, Arial, Helvetica, Sans-serif;
+    font-size: 0.813em;
+    line-height: 160%;
+    max-width: none;
+}
+    
+ul { list-style-type: none; margin: 0 0 1.154em 0 }
+ol { list-style-type: decimal;  }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0;}
+
+b, strong { font-weight: bold; }
+i, em { font-style: italic; }
+small { font-size: 80%; }
+
+
+/* 4. LINKS
+----------------------------------------------------------------------------------------*/
+a, a:visited { outline: none; color: #FF9959; text-decoration: none; }
+a:hover { outline: none; text-decoration: underline; }
+a:active, a:focus { outline: none; }
+
+
+/* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+
+
+
+/* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+----------------------------------------------------------------------------------------*/
+#container {
+    padding: 0.809em;
+    max-width: 30em;
+    margin: auto;
+    padding-top: 0;
+  }
+
+aside { width: 100%; }
+bside { width: 100%; }
+.reference-box{ width:100% }
+
+
+/* 7. BROWSER AND NON-SEMANTIC STYLING
+----------------------------------------------------------------------------------------*/
+.cf:before, .cf:after { content: ""; display: block; }
+.cf:after { clear: both; }
+.ie6 .cf { zoom: 1 }
+
+.clearer{ clear: both;}
+
+.first{
+    margin-left: 0 !important;
+    
+}
+
+.last{
+    margin-right: 0 !important;
+    
+}
+/* floats */
+.fleft{
+    float: left;
+}
+.fright{
+    float: right;
+}
+/* aligns */
+.aleft{
+    text-align: left;    
+}
+.aright{
+    text-align: right;
+}
+.acenter{
+    text-align: center;
+}
+.ajustify{
+    text-align: justify;
+}
+/*menus*/
+.menu{}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu ul li a{
+    display: block;
+}
+.horizontal-menu{
+    
+}
+.horizontal-menu ul li{
+    display: inline-block;
+}
+
+.vertical-menu{
+    
+}
+.vertical-menu ul li{
+    display: block;
+}
+.changigng-menu{
+    
+}
+.separator{
+    width:100%;
+    height:1px;
+    background: #626262;
+    margin: 1.250em 0;
+}
+
+/* buttons, links */
+.button{
+    
+}
+.link{
+    
+}
+/* displays */
+.only-tablet{
+    display: none;
+}
+
+.not-tablet{
+    display:block;
+}
+.only-mobile{
+    display: none;
+}
+.not-mobile{
+    display: block;
+}
+.hidden, .not-display{
+    display: none;
+}
+.four-two-one-container{
+    
+}
+.two-img{
+    
+}
+
+/* Typekit override */
+body .title,
+header,
+nav,
+article,
+section,
+#social,
+footer,
+button {
+    font-family: dinbold, Arial, Helvetica, Sans-serif;
+}
+
+/* Like buttons
+-----------------------------------------------------------------------------*/
+.connect_widget .like_button_like, .connect_widget .like_button_like .piece {
+    background-color: #4F4242 !important;
+    border: none !important;
+    cursor: default !important;
+}

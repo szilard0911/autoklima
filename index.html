@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Autóklíma Centrum</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<!-- -->
+<link rel="stylesheet" href="css/example/global.css" media="all">
+
+<!-- Csak akkor tölt be, ha ennél nagyobb a body -->
+<link rel="stylesheet" href="css/example/layout.css" media="all and (min-width: 33.236em)">
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!-- Csak akkor tölt be, ha ennél kissebb a body -->
+<link rel="stylesheet" href="css/example/stylesm.css" media="all and (max-width: 33.236em)">
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/example/layout.css" media="all">
+<![endif]-->
+<script src="js/libs/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/modernizr-2.5.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/jquery.mobilegmap.js" type="text/javascript" charset="utf-8"></script>
+
+<link rel="stylesheet" href="css/jqtransform.css" type="text/css" media="screen">
+<script src="js/libs/jquery.jqtransform.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+			$('form').jqTransform({imgPath:'images/form/'});
+		});
+    </script>
+
+<script type="text/javascript" type="text/javascript" charset="utf-8">
+    
+$(document).ready(function(){
+
+  $('.googlemap').mobileGmap();
+
+})
+
+
+
+$(function() {
+  // 1. select all form inputs and the textarea
+  $('form input').add('form textarea')
+
+  // 2. add focus handler
+  .focus(function() {
+    // a. cache current element
+    var $this = $(this);
+
+    // b. set the default value if it hasn't been set
+    if (!$this.data('default')) {
+      $this.data('default', $this.val());
+    }
+
+    // c. blank out the field and change color to black
+    //    if the user hasn't entered text in it
+    if ($this.val() == $this.data('default')) {
+      $this.val('')
+      .css('color', '#fff');
+    }
+  })
+
+  // 3. add blur handler
+  .blur(function() {
+    // a. cache current element
+    var $this = $(this);
+
+    // b. return field to default value and change color to gray
+    //    if the field is empty
+    if ($this.val() == '') {
+      $(this).val($this.data('default'))
+      .css('color', '#fff');
+    }
+  })
+
+  // 4. change text color to gray
+  .css('color', '#fff')
+});
+
+</script>
+
+
+
+</head>
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body class=""> <!--<![endif]-->
+  <div id="back" >
+    <!--div id="header-overlay"></div-->
+
+      <div id="container" class="cf">
+        <header class="cf">
+            <div class="header-top">
+                <span class="mail fleft">INFO@AUTOKLIMACENTRUM.HU </span>
+                <address class="fright">
+                    H-1001 BUDAPEST, RÓNAI LOREM ÚT 31 
+                </address>
+                <div class="clearer"></div>
+            </div>
+            <div class="header-separator separator"></div>
+            <div class="logo-container">
+                    <a class="logo fleft" href="#" title="#">
+                        <img src="images/autoklima-logo.png" alt="#" />
+                    </a>
+                    <a class="phone fright" href="tel:0614556659" title="#">
+                        <img src="images/autoklima-telefon.png" alt="#" />
+                    </a>
+                <div class="clearer"></div>
+            </div>
+            
+            <div class="banner">
+                <img src="images/banner.png" title="" alt=""/>
+            </div>
+            
+        </header>
+        <article>
+          
+          <div id="main" role="main" class="cf">
+                <div class="article">
+                     <div class="article-title">
+                        <h1>SZERVIZÜNKBEN AZ ALÁBBI AUTÓKLÍMA KARBANTARTÁST ÉS JAVÍTÁST VÉGEZZÜK</h1>
+                     </div>
+                     <div class="description">
+                        <ul class="list">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                        </ul>
+                        <ul class="list">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                        </ul>
+                        <div class="clearer"></div>
+                        <section class="first">
+                            <h2>SZIVÁRGÁS KERESÉS</h2>
+                            <div class="section-content">
+                                <p>A kontrasztanyagot – amely UV fénnyel megvilágítva fluoreszkál - a Robinair AC690PRO klímatöltő készülékkel juttatjuk be a jármű klímarendszerébe. Az anyag elkeveredik a rendszerben található olajban és hűtőközegben, tehát mindenhol jelen lesz a hűtőkörfolyamatban. Szivárgás esetén az olajjal együtt a kontrasztanyag is kilép a rendszerből, majd kicsapódik a szivárgási hely környezetében. Jelenléte UV lámpával megvilágítva kimutatható.</p>
+                            </div>
+                        </section>
+                        <section class="last">
+                            <h2>KLÍMATÖLTÉS</h2>
+                            <div class="section-content"></div>
+                            <p>Az autó légkondicionáló berendezéséből évente a hűtőközeg akár 15-20 százaléka is elillanhat. Ha a klímaberendezés nem képes lehűteni a levegőt valószínű, hogy a rendszerben kevés a gáz, vagy az teljesen el is távozott. Ebben az esetben a klímagáz mennyiségét a gyári értékekre kell visszaállítani. A töltés illetve rátöltés az R134a gázzal, a járműiparban jelenleg leggyakrabban használt hűtőközeggel történik. Az elkoszolódott pollenszűrő is csökkenti a klíma hatásfokát, ezért évente - az időszakos szerviz alkalmával - javasolt a cseréje.</p>
+                        </section>
+                        <div class="clearer"></div>
+                     </div>
+                </div>
+                <div class="article">
+                    <div class="article-title">
+                        <h1>KLÍMA TISZTÍTÁS</h1>
+                    </div>
+                    <div class="description">
+                        <p class="intro">Az autók légkondicionáló berendezésének karbantartása legalább évente, különösen a nyári szezon előtt rendkívül fontos. A tisztítással nem csak a hatékonyságot növelhetjük, illetve csökkenthetjük az energiafelhasználást, hanem a nyár elején gyakori influenzás tüneteket is megelőzhetjük vele.</p>
+                        <section class="gray first">
+                            <h2>Baktériumok által okozott szagok a légkondicionáló rendszerben</h2>
+                            <div class="section-content">
+                                <p>A levegő által hordozott por és pollen ideális táptalaja a baktériumok elszaporodásának. A baktériumok felgyűlnek a légkondicionáló rendszerben. Amikor bekapcsoljuk a rendszert, ezek a mikro-organizmusok irritálják az utasokat. Orrfolyást, szemirritációt, torokfájást, hörghurutot és kellemetlen szagokat okoznak.</p>
+                            </div>
+                        </section>
+                        <section class="gray last">
+                            <h2>Nem bakteriális eredetű belső szag</h2>
+                            <div class="section-content">
+                                <p>A szagok termékekből származó volatilis molekulák. Ezeket a levegő hordozhatja, vagy a gépjármű kárpitjában lehetnek. A kellemetlen szagok, mint a cigaretta füst, állatszag, ételszag,
+stb. nagyon irritálhat és kellemetlen lehet. Ezek megtapadhatnak a kárpiton és a gépjárműben maradhatnak.</p>
+                            </div>
+                        </section>
+                        <div class="clearer"></div>
+                        <p class="outro">Az autóklíma tisztítás során nem csak az elpárologtató és a befúvó csövek fertőtlenítése történik meg, hanem az egész autó baktérium és vírusmentes lesz, valamint a kellemetlen szagok is eltűnnek.</p>
+                        <p class="outro">Ne feledje, egy rövid látogatással szervizünkbe segít mérsékelni a légkondicionálás veszélyeit, valamint egy pollenszűrő cserével az allergiát okozó virágpor is az autón kívül tartható.</p>
+                    </div>
+                </div>
+                <div class="article">
+                     <div class="article-title">
+                        <h1>IDŐSZAKOSAN ELLENŐRIZTESSE AZ A/C RENDSZER ÁLLAPOTÁT AZ ÖN MEGELÉGEDÉSE ÉS KÉNYELME ÉRDEKÉBEN</h1>
+                    </div>
+                    <div class="description">
+                        <section class="gray one-col">
+                            <h2>Időszakos karbantartás</h2>
+                            <ul class="list-inline">
+                                <li>Stabil hőmérsékletet garantál az utastérben</li>
+                                <li>Optimalizálja az utastérben levő nedvesség szintjét</li>
+                                <li>Véd a légkörben levő szennyező anyagok ellen és csökkenti az allergiás megbetegedések kockázatát</li>
+                                <li>Megelőzi az alkatrészek korai meghibásodását és a költséges javításokat</li>
+                                <li>Eltávolítja a kellemetlen szagokat</li>
+                            </ul>
+                        </section>
+                        <p class="outro">A klímaberendezés rendszeres használata meghosszabbítja azok élettartamát és maximális kényelmet nyújt minden évszakban: nyáron ideális hőmérsékletet és télen gyors párátlanítást.</p>
+                    </div>
+                </div>
+                
+                <div class="article">
+                    <div class="article-title">
+                        <h1>ÉVENTE VÉGZENDŐ FELADATOK</h1>
+                    </div>
+                    <div class="description">
+                        <section class="gray first">
+                            <h2>A/C diagnosztika</h2>
+                            <div class="section-content">
+                                <ul>
+                                    <li>Általános tesztelés</li>
+                                    <li>A folyadékok szintjének és a szivárgásoknak az ellenőrzése</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="gray last">
+                            <h2>Minőségi levegő</h2>
+                            <div class="section-content">
+                                <ul>
+                                    <li>A pollenszűrő cseréje</li>
+                                    <li>Az A/C rendszer antibakteriális és szagellenes kezelése</li>
+                                    <li>Az utastér antibakteriális és szagellenes kezelése</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <div class="clearer"></div>
+                    </div>
+                </div>
+                
+                <div class="article two-one">
+                    
+                    <div class="description first">
+                        <div class="article-title">
+                            <h1>MINDEN 2. ÉVBEN VÉGZENDŐ FELADATOK</h1>
+                        </div>
+                        <section class="gray">
+                            <h2>Az A/C rendszer feltöltése</h2>
+                            <div class="section-content">
+                                <ul>
+                                    <li>A folyadékok szintjének és a szivárgások ellenőrzése</li>
+                                    <li>Folyadékok feltöltése</li>
+                                    <li>A hűtőközeg cseréje</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="description last">
+                        <div class="article-title">
+                            <h1>3 ÉVENTE VÉGZENDŐ FELADATOK</h1>
+                        </div>
+                        <section class="gray">
+                            <h2>Az A/C rendszer teljes ellenőrzése</h2>
+                            <div class="section-content">
+                                <ul>
+                                    <li>Általános ellenőrzés</li>
+                                    <li>A folyadékok szintjének és a szivárgások ellenőrzése</li>
+                                    <li>Folyadékok feltöltése</li>
+                                    <li>A hűtőközeg cseréje</li>
+                                    <li>A szárítószűrő cseréje</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <div class="clearer"></div>
+                    </div>
+                    <div class="clearer"></div>
+                </div>
+                
+                <div class="prices">
+                    <div class="prices-title">
+                        <h1>Áraink</h1>
+                    </div>
+	
+                	<div class="pricesRow">
+                		<div class="pricesLabel fleft">
+                		  Autóklíma töltés 50dkg-ig
+                        </div>
+                		<div class="pricesValue fright">
+                			6 000.- Ft		
+                        </div>
+                		<div class="clearer"></div>
+                	</div>
+                    <div class="table-separator"></div>
+                    
+                    <div class="pricesRow">
+                		<div class="pricesLabel fleft">
+                		  Autóklíma töltés, 50dkg-felett, festés, olaj pótlás, nyomáspróba
+                        </div>
+                		<div class="pricesValue fright">
+                			8 000.- Ft		
+                        </div>
+                		<div class="clearer"></div>
+                	</div>
+                    <div class="table-separator"></div>
+                    
+                    <div class="pricesRow">
+                		<div class="pricesLabel fleft">
+                		  Autóklíma töltés, festés, 50dkg-felett, olaj pótlás, nyomáspróba (szerződött partnereink részére, és Budapest10 kártyatulajdonosoknak)
+                        </div>
+                		<div class="pricesValue fright">
+                			7 000.- Ft		
+                        </div>
+                		<div class="clearer"></div>
+                	</div>
+                    <div class="table-separator"></div>
+                    
+                    <div class="pricesRow">
+                		<div class="pricesLabel fleft">
+                		  Nyomáspróba
+                        </div>
+                		<div class="pricesValue fright">
+                			3 500.- Ft		
+                        </div>
+                		<div class="clearer"></div>
+                	</div>
+                    <div class="table-separator"></div>
+                    
+                    <div class="pricesRow">
+                		<div class="pricesLabel fleft">
+                		  Festés olajpótlással
+                        </div>
+                		<div class="pricesValue fright">
+                			3 000.- Ft		
+                        </div>
+                		<div class="clearer"></div>
+                	</div>
+                    <div class="table-separator"></div>
+                    
+                    <div class="pricesRow">
+                		<span class="pricesLabel fleft">
+                		  Gombátlanítás, szagtalanítás
+                        </span>
+                		<span class="pricesValue fright">
+                			4 000.- Ft		
+                        </span>
+                		<div class="clearer"></div>
+                	</div>
+                    <div class="table-separator"></div>
+                
+                    <p class="prices-info acenter">Az árak az Áfát tartalmazzák. Érvényes 2012 május 1-től.</p>
+                    
+            	</div>
+                
+                 <div class="article">
+                    <div class="article-title">
+                        <h1>Kapcsolat</h1>
+                    </div>
+                    <div class="description">
+                        <section class="full-width">
+                            <div class="section-content">
+                                <div class="googlemap-wrapper">
+                                    <div class="googlemap" id="map" data-center="Győr, Egyetem Tér 1." data-zoom="15">
+                                        <address>
+                                          <strong>builtbyrobot</strong><br />
+                                          Egyetem tér 1.<br />
+                                          9023 Győr
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <p class="outro">Ha bármi kérdése lenne, vagy árajánlatot szeretne kérni kérjük töltse ki ezt az űrlapot majd küldje el nekünk. Munkatársunk hamarossan felveszi Önnel a kapcsolatot!</p>
+                        <div class="clearer"></div>
+                        <div class="contact-form">
+                        <form id="contacts">
+                            <ul class="input-box first">
+                                <li>
+                                    <input type="text" value="Név " name="name" id="name"  />
+                                </li>
+                                <li>
+                                    <input type="text" value="E-mail cím " name="mail" id="mail"  />
+                                </li>
+                            </ul>
+                            <ul class="input-box">
+                                <li>
+                                    <input type="text" value="Telefonszám " name="tel" id="tel"  />
+                                </li>
+                                <li>
+                                    <select id="subject" name="type">
+                                        <option value="0" disabled="disabled" selected="selected"> --- Érdeklődés típus</option>
+                                        <option value="1">Bejelentkeznék</option>
+                                        <option value="2">Árajánlatot kérek telefonon</option>
+                                        <option value="3">Érdeklődni szeretnék</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <ul class="input-box">
+                                <li class="message">
+                                    <textarea id="message" name="message">Üzenet</textarea>
+                                </li>
+                            </ul>
+                            <ul class="input-box last send">
+                                <li>
+                                    <button class="button">Küldés</button>
+                                </li>
+                            </ul>
+                        </form>
+                        </div>
+                        
+                        
+                        
+                        <div class="address">
+                          <div class="separator"></div>
+                        	<div class="addressRow">
+                        		<div class="addressLabel fleft">
+                      		        Cím
+                                </div>
+                        		<div class="addressValue fright">
+                        			Budapest, Lorem Ipsum út 12
+                                </div>
+                        		<div class="clearer"></div>
+                        	</div>
+                            <div class="table-separator"></div>
+                            
+                            <div class="addressRow">
+                        		<div class="addressLabel fleft">
+                      		        Telefonszám
+                                </div>
+                        		<div class="addressValue fright">
+                        			06 1 / 552 63 96
+                                </div>
+                        		<div class="clearer"></div>
+                        	</div>
+                            <div class="table-separator"></div>
+                            
+                            <div class="addressRow">
+                        		<div class="addressLabel fleft">
+                      		        E-mail cím
+                                </div>
+                        		<div class="addressValue fright">
+                        			Info ‘kukac’ autoklimacentrum ‘pont’ hu
+                                </div>
+                        		<div class="clearer"></div>
+                        	</div>
+                            <div class="table-separator"></div>
+                    	</div>
+                        
+                    </div>
+                </div>
+           
+        
+          </div><!-- /main -->
+        
+          
+        </article>
+        
+        <footer class="cf">
+            <div class="logo-container">
+                <a href="#" title="#" class="fleft">
+                    <img class="logo" src="images/autoklima-logo-footer.png" title="#" alt="#" />
+                </a>
+                <a href="http://www.pannako.hu" title="Pannako - Internetes tanácsadás" class="fright">
+                    Fejlesztés: <img class="logo" src="images/pannako-logo.png" title="pannako.hu" alt="Pannako logo" />
+                </a>
+                <div class="clearer"></div>
+            </div>
+        </footer>
+      </div><!-- /container --> 
+      
+      
+  </div>
+  
+</body>
+
+</html>

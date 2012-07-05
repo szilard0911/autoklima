@@ -1,0 +1,33 @@
+body{}
+
+.header-top span.mail, .header-top address{
+    float: none !important;
+}
+
+.logo-container a{
+    float: none !important;
+    display: block;
+}
+header .logo-container{
+    
+    height: 8em;
+}
+header .logo-container a.logo, header .logo-container a.phone {
+    height: 4em;
+    display: block;
+    line-height: 4em;
+}
+footer{
+    text-align:center;
+}
+
+.pricesValue{
+    font-size: 1em !important;
+}
+
+ form ul.input-box {
+        width: 100% !important;
+        float: none !important;
+        height: auto !important;
+        margin: 0 auto 1.1111% !important;
+    }

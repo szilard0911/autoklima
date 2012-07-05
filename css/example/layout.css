@@ -1,0 +1,217 @@
+/* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+----------------------------------------------------------------------------------------*/
+
+#container {
+    
+	margin: 0 auto; 
+    max-width: 56.250em;
+    padding: 0 0.809em; 
+}
+
+header { text-align: left; }
+
+	
+header h2:before, header h2:after { width: 42%; }
+
+h1 {  }
+    
+h1 span {
+  font-family: arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing:0.1em;
+  font-size:0.382em;
+  line-height:3.236em;
+  display:block;
+  }
+  
+h1 span:before, h1 span:after {
+  content:"";
+  border-top:1px solid #333;
+  height: 0.1em;
+  width: 19%;
+  display: block;
+  margin-top: 1.618em;
+}
+  
+h1 span:before { float: left; }  
+h1 span:after { float: right; }
+
+ul {  }
+ol { }
+
+p.intro {
+  
+  }
+
+aside {
+  float: left;
+  max-width: 26.563em;
+  height:auto;
+  width: 46%;
+}
+
+aside img.two-img {width: 50%; float:left;}
+
+
+bside {clear: both;}
+bside div.four-two-one-container {width: 100%; /*margin: 0 0.5em;*/}
+bside div.four-two-one-container div {float: left; display: block; width: 25%; max-width: 14.75em;}
+
+/* article begin */
+
+article ul.list{
+    width: 50%;
+    float: left;
+    max-width: 34.615em;
+}
+article section .section-content{
+    margin-top: 0.875em;
+}
+article section{
+    max-width:27.500em;
+    width:48.888%;
+    float: left;
+    margin: 0 1.111%;
+}
+article section.gray{
+    max-width: 25em;
+    width: 44.444%;
+}
+
+article section.gray ul.list-inline{
+    width: 100%;
+    display: inline-block;
+    max-width: 100%;
+}
+article section.gray ul.list-inline li{
+    width: 44%;
+    max-width:31.231em;
+    float: left;
+    background-position: left top;
+    line-height: 120%;
+}
+article section.one-col{
+    width: 95.5556%;
+    float: none;
+    margin: 0 auto;
+    max-width: 53.750em;
+}
+
+article section.full-width{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    max-width: 56.250em;
+}
+
+article .two-one .description{
+    max-width:27.500em;
+    width:48.888%;
+    float: left;
+    margin: 0 1.111%;
+}
+article .two-one .article-title{
+    min-height: 3.4em
+}
+article .two-one section{
+    min-height: 7.7em;
+    max-width: 27.500em;
+    width: 95.5556%;
+}
+
+
+/* article end */
+
+
+
+/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+ * 60em + (1.618em * 2) = 63.236em / Eliminates potential of horizontal scrolling in most cases (60em = 960px)
+----------------------------------------------------------------------------------------*/
+@media screen and (min-width: 30em) and (max-width: 63.236em) {
+
+    #container{
+        min-width: 30em;
+    }
+    
+      
+   
+
+        
+    p.intro {
+      
+      }
+      
+    aside {
+      max-width: 26.56em;
+    }
+    
+    bside div.four-two-one-container div {float: left; display: block; }
+
+    #references-list .list-item-box a.pic-link {
+        margin: 0 0.313em;
+    }
+}
+
+/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+ * 60em + (1.618em * 2) = 63.236em / Eliminates potential of horizontal scrolling in most cases (60em = 960px)
+----------------------------------------------------------------------------------------*/
+@media screen and (min-width: 48em) and (max-width: 63.236em) {
+
+    #container {
+        
+        min-width: 44.764em; }
+    
+    header h2:before, header h2:after { 
+        
+    }
+    
+    
+    p.intro {
+        max-width: 63.236em;
+    }
+      
+    aside, aside a.pic-link{
+    }
+    
+    bside div.four-two-one-container div { }
+   
+    	
+}
+/* tablet */ 
+@media screen and (min-width: 30em) and (max-width: 48em) {
+    #container {
+    max-width: 48em;
+    min-width: 30em;
+    }
+    
+    .pricesValue{
+        font-size: 1em !important;
+    }
+    
+    
+    form ul.input-box {
+        width: 100% !important;
+        float: none !important;
+        height: auto !important;
+        margin: 0 auto 1.1111% !important;
+    }
+    
+    p.intro {
+      max-width: 48em;
+    }
+    aside {
+      float: none;
+      width: auto;
+      height: auto;
+      margin: 0 auto 2.2em;
+    }
+    
+    bside div.four-two-one-container div {
+        
+        width:auto;
+        height: auto;
+        min-width: 15em;
+    }
+    
+    
+}
